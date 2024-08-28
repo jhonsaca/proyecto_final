@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    
+</head>
+<body>
+    <header class="encabezado">
+        <img src="Assets/Logotipo_cropped.png" alt="Logotipo de Alura">
+    </header>
+    <main class="contenido">
+        <div class="entrada">
+            <div class="entry">
+                <textarea id="user_input" placeholder="Ingrese su texto"></textarea>
+            </div>
+            <div class="container">
+                <div class="container_discl">
+                    <h6><img src="Assets/mark.png" alt="Signo de exclamación" class="disclaimer"> Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botons">
+                    <input type="button" value="Encriptar" onclick="encriptar()" class="but">
+                    <input type="button" value="Desencriptar" onclick="push_desencriptar()" class="but">
+                </div>
+            </div>
+        </div>
+        <div class="resultado">
+            <img src="Assets/Muñeco.png" alt="Muñeco" class="img_dec">
+            <div class= "texto_resultado">
+                <textarea id= "texto_resul" cols="20" rows="10" placeholder= "Ningun texto encontrado. Ingresa el texto que quieras encriptar o desencriptar" disabled></textarea>
+                <div class="container_copy">
+                    <input type="button" value="Copiar" onclick="copiar()" class="btn_copy">
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="foot">
+        <h6>Desarrollado por Jhon Saca</h6>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
